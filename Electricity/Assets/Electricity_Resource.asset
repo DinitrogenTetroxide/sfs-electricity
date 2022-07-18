@@ -17,6 +17,6 @@ MonoBehaviour:
     TranslatableName: Power
   resourceUnit:
     plainText: 1
-    TranslatableName: '%'
+    TranslatableName: KWh
   resourceMass: 0
   transferRate: 1

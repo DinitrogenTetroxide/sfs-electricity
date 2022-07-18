@@ -77,8 +77,6 @@ MonoBehaviour:
     - changes: []
       tags:
       - tag: {fileID: 11400000, guid: 3c5e45a9d5d95524bb991a0d1dd6384b, type: 2}
-        priority: -1
-      - tag: {fileID: 11400000, guid: 83ed374b5b160d240aefbf842a5bcb1d, type: 2}
         priority: 0
       cost: 0
     tags: []
