@@ -8,15 +8,16 @@ Go [here](https://github.com/DinitrogenTetroxide/sfs-electricity/releases). Ther
 
 ## Current parts
 * Functional electricity system
+* Battery 2x1,
 * Battery 4x1,
+* Battery 6x1
 * RTG,
 * Small Solar Panel,
+* Big Solar Panel,
 * Ion Drive
   
   ### Yet to add
   * Wheels (Medium and Big)
-  * Big Solar Panel (already implemented, currently undergoing testing)
-  * More battery sizes (2x1 and 6x1)
   
 ## Known bugs
   * Power generation is not affected by timewarp.
