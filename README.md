@@ -12,6 +12,8 @@ First of all, go [here](https://github.com/DinitrogenTetroxide/sfs-electricity/r
 * Battery 4x1,
 * Battery 6x1
 * RTG,
+* Small RTG
+* Big RTG
 * Small Solar Panel,
 * Big Solar Panel,
 * Ion Drive
