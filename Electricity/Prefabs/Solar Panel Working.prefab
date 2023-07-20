@@ -52,6 +52,8 @@ MonoBehaviour:
   attachmentSurfaces: 0
   dragSurfaces: 1
   colliderArea: 1
+  attachByOverlap: 1
+  physicsCollider: 0
   clickArea: 1
   baseDepth: 0
   composedBaseDepth:
@@ -77,12 +79,15 @@ MonoBehaviour:
   renderQueueOffset: 0
   polygonModule: {fileID: 8905710515723217949}
   UV_Mode: 0
+  grid: 0
   bounds:
   - {x: -0.95, y: 0}
   - {x: -0.95, y: 0.15}
   - {x: 0.95, y: 0.15}
   - {x: 0.95, y: 0}
   texture: {fileID: 11400000, guid: 720ef49991d6c034c9e9384efbe5edce, type: 2}
+  type: 0
+  colorBasic: {r: 1, g: 1, b: 1, a: 1}
   colorModule: {fileID: 3257348986948700469}
 --- !u!114 &2462674240757705008
 MonoBehaviour:
@@ -99,8 +104,6 @@ MonoBehaviour:
   impactTolerance: 0
   ownEngineNozzle: {fileID: 0}
   polygon: {fileID: 8905710515723217949}
-  collider_Polygon: {fileID: 0}
-  collider_Box: {fileID: 0}
 --- !u!114 &3257348986948700469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,11 +223,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayName:
-    plainText: 1
     TranslatableName: Solar Panel [ELECTRICITY PACK]
-  description:
     plainText: 1
+  description:
     TranslatableName: Solar Panel, generates 3 units of electricity when deployed.
+    plainText: 1
   mass:
     variables: {fileID: 1449713589513460084}
     input: 0.5
@@ -330,7 +333,6 @@ MonoBehaviour:
     offset: 0
     transform: {fileID: 2480346699566466929}
     spriteRenderer: {fileID: 0}
-    image: {fileID: 0}
     X:
       serializedVersion: 2
       m_Curve:
@@ -391,11 +393,18 @@ MonoBehaviour:
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     audioSource: {fileID: 0}
+    floatVariable:
+      variableName: 
+      referenceToVariables: {fileID: 0}
+      localValue: 0
+    boolVariable:
+      variableName: 
+      referenceToVariables: {fileID: 0}
+      localValue: 0
   - type: 1
     offset: 0
     transform: {fileID: 7535253667890424400}
     spriteRenderer: {fileID: 0}
-    image: {fileID: 0}
     X:
       serializedVersion: 2
       m_Curve:
@@ -474,11 +483,18 @@ MonoBehaviour:
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     audioSource: {fileID: 0}
+    floatVariable:
+      variableName: 
+      referenceToVariables: {fileID: 0}
+      localValue: 0
+    boolVariable:
+      variableName: 
+      referenceToVariables: {fileID: 0}
+      localValue: 0
   - type: 2
     offset: 0
     transform: {fileID: 2136229196549872706}
     spriteRenderer: {fileID: 0}
-    image: {fileID: 0}
     X:
       serializedVersion: 2
       m_Curve:
@@ -557,11 +573,18 @@ MonoBehaviour:
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     audioSource: {fileID: 0}
+    floatVariable:
+      variableName: 
+      referenceToVariables: {fileID: 0}
+      localValue: 0
+    boolVariable:
+      variableName: 
+      referenceToVariables: {fileID: 0}
+      localValue: 0
   - type: 7
     offset: 0
     transform: {fileID: 7535253667890424400}
     spriteRenderer: {fileID: 0}
-    image: {fileID: 0}
     X:
       serializedVersion: 2
       m_Curve:
@@ -622,6 +645,14 @@ MonoBehaviour:
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     audioSource: {fileID: 0}
+    floatVariable:
+      variableName: 
+      referenceToVariables: {fileID: 0}
+      localValue: 0
+    boolVariable:
+      variableName: 
+      referenceToVariables: {fileID: 0}
+      localValue: 0
 --- !u!114 &6160366988733750506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -635,8 +666,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   label:
-    plainText: 0
     TranslatableName: Panel_Expanded
+    plainText: 0
   state: {fileID: 2590625007958029063}
 --- !u!114 &24292880642653177
 MonoBehaviour:
@@ -867,6 +898,8 @@ MonoBehaviour:
   attachmentSurfaces: 0
   dragSurfaces: 1
   colliderArea: 1
+  attachByOverlap: 1
+  physicsCollider: 0
   clickArea: 1
   baseDepth: -0.1
   composedBaseDepth:
@@ -892,12 +925,15 @@ MonoBehaviour:
   renderQueueOffset: 0
   polygonModule: {fileID: 2471448909710758840}
   UV_Mode: 0
+  grid: 0
   bounds:
   - {x: 0.000000007450581, y: -0.2}
   - {x: 0.000000007450581, y: 0.2}
   - {x: 0.35, y: 0.2}
   - {x: 0.35, y: -0.2}
   texture: {fileID: 11400000, guid: 720ef49991d6c034c9e9384efbe5edce, type: 2}
+  type: 0
+  colorBasic: {r: 1, g: 1, b: 1, a: 1}
   colorModule: {fileID: 8087706692303726375}
 --- !u!114 &7998953017927624936
 MonoBehaviour:
@@ -914,8 +950,6 @@ MonoBehaviour:
   impactTolerance: 0
   ownEngineNozzle: {fileID: 0}
   polygon: {fileID: 2471448909710758840}
-  collider_Polygon: {fileID: 0}
-  collider_Box: {fileID: 0}
 --- !u!114 &8087706692303726375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1068,6 +1102,8 @@ MonoBehaviour:
   attachmentSurfaces: 0
   dragSurfaces: 0
   colliderArea: 0
+  attachByOverlap: 1
+  physicsCollider: 0
   clickArea: 0
   baseDepth: 0.5
   composedBaseDepth:
@@ -1093,12 +1129,15 @@ MonoBehaviour:
   renderQueueOffset: 1
   polygonModule: {fileID: 1458582219767562913}
   UV_Mode: 0
+  grid: 0
   bounds:
   - {x: -0.04, y: -0.5}
   - {x: -0.04, y: 0.5}
   - {x: 0.16, y: 0.5}
   - {x: 0.16, y: -0.5}
   texture: {fileID: 11400000, guid: da07820ae1ee5ca42a3825322ecbabcf, type: 2}
+  type: 0
+  colorBasic: {r: 1, g: 1, b: 1, a: 1}
   colorModule: {fileID: 0}
 --- !u!114 &1554485330481716085
 MonoBehaviour:
@@ -1115,8 +1154,6 @@ MonoBehaviour:
   impactTolerance: 1
   ownEngineNozzle: {fileID: 0}
   polygon: {fileID: 1458582219767562913}
-  collider_Polygon: {fileID: 0}
-  collider_Box: {fileID: 0}
 --- !u!114 &8904711678941582195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1132,6 +1169,8 @@ MonoBehaviour:
   attachmentSurfaces: 0
   dragSurfaces: 1
   colliderArea: 1
+  attachByOverlap: 1
+  physicsCollider: 0
   clickArea: 1
   baseDepth: 0.5
   composedBaseDepth:
@@ -1222,7 +1261,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8611242874269497260}
   m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
-  m_LocalPosition: {x: 0.35, y: 0, z: 0}
+  m_LocalPosition: {x: 5.95, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1244,6 +1283,8 @@ MonoBehaviour:
   attachmentSurfaces: 0
   dragSurfaces: 1
   colliderArea: 1
+  attachByOverlap: 1
+  physicsCollider: 0
   clickArea: 1
   baseDepth: 0
   composedBaseDepth:
@@ -1269,12 +1310,15 @@ MonoBehaviour:
   renderQueueOffset: 0
   polygonModule: {fileID: 3381805903318703083}
   UV_Mode: 0
+  grid: 0
   bounds:
   - {x: -0.95, y: 0}
   - {x: -0.95, y: 0.15}
   - {x: 0.95, y: 0.15}
   - {x: 0.95, y: 0}
   texture: {fileID: 11400000, guid: 720ef49991d6c034c9e9384efbe5edce, type: 2}
+  type: 0
+  colorBasic: {r: 1, g: 1, b: 1, a: 1}
   colorModule: {fileID: 1276992435098254954}
 --- !u!114 &8288025427228661950
 MonoBehaviour:
@@ -1291,8 +1335,6 @@ MonoBehaviour:
   impactTolerance: 0
   ownEngineNozzle: {fileID: 0}
   polygon: {fileID: 3381805903318703083}
-  collider_Polygon: {fileID: 0}
-  collider_Box: {fileID: 0}
 --- !u!114 &1276992435098254954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1376,7 +1418,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7535253667890424400
 Transform:
   m_ObjectHideFlags: 0
@@ -1386,7 +1428,7 @@ Transform:
   m_GameObject: {fileID: 8877409266750608129}
   m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 0.35, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2482967785408195463}
@@ -1407,6 +1449,8 @@ MonoBehaviour:
   attachmentSurfaces: 0
   dragSurfaces: 1
   colliderArea: 0
+  attachByOverlap: 1
+  physicsCollider: 0
   clickArea: 1
   baseDepth: 0
   composedBaseDepth:
@@ -1414,7 +1458,10 @@ MonoBehaviour:
     input: 
   isComposedDepth: 0
   depthMultiplier: 0
+  advancedCut: 0
   cut: 0
+  advancedCutData:
+    cuts: []
   reduceResolution: 1
   width_a:
     variables: {fileID: 1449713589513460084}
@@ -1445,7 +1492,7 @@ MonoBehaviour:
   textures:
     textureMode: 0
     texture:
-      colorTexture: {fileID: 11400000, guid: 4335d76cc842e25428336efe2771f23a, type: 2}
+      colorTexture: {fileID: 11400000, guid: 08d98bc7ed5993a479d01aaddc580b5e, type: 2}
       shapeTexture: {fileID: 11400000, guid: cba996a78776328418a9e8ff2526b7ab, type: 2}
     textures: []
     widthMode: 0
@@ -1503,6 +1550,7 @@ MonoBehaviour:
   centerCover: 0
   rightCover: 0
   separatorRing: 0
+  smoothShading: 0
 --- !u!114 &3395309264135546644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1518,8 +1566,6 @@ MonoBehaviour:
   impactTolerance: 0
   ownEngineNozzle: {fileID: 0}
   polygon: {fileID: 8609976055304554539}
-  collider_Polygon: {fileID: 0}
-  collider_Box: {fileID: 0}
 --- !u!33 &8107646451318736242
 MeshFilter:
   m_ObjectHideFlags: 0

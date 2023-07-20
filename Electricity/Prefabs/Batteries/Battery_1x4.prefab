@@ -38,7 +38,7 @@ Transform:
   m_GameObject: {fileID: 6025496177165280394}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.25, z: 1}
+  m_LocalScale: {x: 1, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -57,11 +57,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayName:
-    plainText: 1
     TranslatableName: Battery [ELECTRICITY PACK]
+    plainText: 1
   description:
-    plainText: 0
     TranslatableName: Battery_Description
+    plainText: 0
   mass:
     variables: {fileID: 6025496177165280511}
     input: 0.5
@@ -188,6 +188,8 @@ MonoBehaviour:
   attachmentSurfaces: 1
   dragSurfaces: 1
   colliderArea: 1
+  attachByOverlap: 1
+  physicsCollider: 0
   clickArea: 1
   baseDepth: 0
   composedBaseDepth:
@@ -195,7 +197,10 @@ MonoBehaviour:
     input: 
   isComposedDepth: 0
   depthMultiplier: 1
+  advancedCut: 0
   cut: 0
+  advancedCutData:
+    cuts: []
   reduceResolution: 0
   width_a:
     variables: {fileID: 6025496177165280511}
@@ -227,7 +232,7 @@ MonoBehaviour:
     textureMode: 0
     texture:
       colorTexture: {fileID: 11400000, guid: 90b887cdeab2d6e4db22979aa4489578, type: 2}
-      shapeTexture: {fileID: 11400000, guid: 2129421f71fb97e4ba71582fe7cc1d74, type: 2}
+      shapeTexture: {fileID: 11400000, guid: 5b25bfc3f2e8dc3499afb03d76798199, type: 2}
     textures: []
     widthMode: 0
     width:
@@ -244,6 +249,7 @@ MonoBehaviour:
   centerCover: 0
   rightCover: 0
   separatorRing: 0
+  smoothShading: 0
 --- !u!114 &6025496177165280500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -273,21 +279,6 @@ MonoBehaviour:
       y:
         variables: {fileID: 6025496177165280511}
         input: height
-  snapPoints:
-  - variables: {fileID: 6025496177165280511}
-    x:
-      variables: {fileID: 6025496177165280511}
-      input: 0
-    y:
-      variables: {fileID: 6025496177165280511}
-      input: 0
-  - variables: {fileID: 6025496177165280511}
-    x:
-      variables: {fileID: 6025496177165280511}
-      input: 0
-    y:
-      variables: {fileID: 6025496177165280511}
-      input: height
 --- !u!114 &6025496177165280497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -301,7 +292,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points:
-  - position:
+  - toggle: 0
+    enabled:
+      variableName: 
+      referenceToVariables: {fileID: 0}
+      localValue: 0
+    position:
       variables: {fileID: 6025496177165280511}
       x:
         variables: {fileID: 6025496177165280511}
@@ -314,7 +310,15 @@ MonoBehaviour:
     output:
       variables: {fileID: 6025496177165280511}
       input: width_a
-  - position:
+    outputOffset: 0
+    shareIsOccupied: 0
+    shareIndex: 0
+  - toggle: 0
+    enabled:
+      variableName: 
+      referenceToVariables: {fileID: 0}
+      localValue: 0
+    position:
       variables: {fileID: 6025496177165280511}
       x:
         variables: {fileID: 6025496177165280511}
@@ -327,6 +331,9 @@ MonoBehaviour:
     output:
       variables: {fileID: 6025496177165280511}
       input: width_b
+    outputOffset: 0
+    shareIsOccupied: 0
+    shareIndex: 0
 --- !u!114 &4355835229077590899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -376,8 +383,6 @@ MonoBehaviour:
   impactTolerance: 0
   ownEngineNozzle: {fileID: 0}
   polygon: {fileID: 6025496177165280503}
-  collider_Polygon: {fileID: 0}
-  collider_Box: {fileID: 0}
 --- !u!114 &6510604737524473163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -391,7 +396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   polygonModule: {fileID: 6025496177165280503}
-  density: 129.03226
+  density: 1000
   mass:
     variableName: mass_wet
     referenceToVariables: {fileID: 6025496177165280511}

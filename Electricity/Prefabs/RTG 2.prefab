@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 5859485230433349666}
   - component: {fileID: 466575739661236745}
   m_Layer: 8
-  m_Name: RTG
+  m_Name: RTG 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54,22 +54,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayName:
-    TranslatableName: RTG [ELECTRICITY PACK]
+    TranslatableName: Big RTG [ELECTRICITY PACK]
     plainText: 1
   description:
-    TranslatableName: RTG, generates 1.5 units of electricity per second.
+    TranslatableName: RTG, generates 4 units of electricity per second.
     plainText: 1
   mass:
     variables: {fileID: 6025496177165280511}
-    input: 1
+    input: 2
   centerOfMass:
     variables: {fileID: 6025496177165280511}
     x:
       variables: {fileID: 6025496177165280511}
-      input: 0.25
+      input: 0
     y:
       variables: {fileID: 6025496177165280511}
-      input: 0.5
+      input: 0
   orientation: {fileID: 6025496177165280499}
   variablesModule: {fileID: 6025496177165280511}
   variants:
@@ -126,10 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doubleVariables:
-    saves:
-    - name: 
-      save: 0
-      data: 0001000000ffffffff010000000000000004010000000d53797374656d2e446f75626c6501000000076d5f76616c7565000600000000000000000b
+    saves: []
   boolVariables:
     saves: []
   stringVariables:
@@ -171,15 +168,15 @@ MonoBehaviour:
         variables: {fileID: 6025496177165280511}
         x:
           variables: {fileID: 6025496177165280511}
-          input: 0.25
+          input: 0
         y:
           variables: {fileID: 6025496177165280511}
-          input: 0
+          input: -1
       width:
         variables: {fileID: 6025496177165280511}
         x:
           variables: {fileID: 6025496177165280511}
-          input: 0.5
+          input: 1
         y:
           variables: {fileID: 6025496177165280511}
           input: 0
@@ -188,7 +185,7 @@ MonoBehaviour:
         variables: {fileID: 6025496177165280511}
         x:
           variables: {fileID: 6025496177165280511}
-          input: 0.25
+          input: 0
         y:
           variables: {fileID: 6025496177165280511}
           input: 1
@@ -196,7 +193,7 @@ MonoBehaviour:
         variables: {fileID: 6025496177165280511}
         x:
           variables: {fileID: 6025496177165280511}
-          input: 0.5
+          input: 1
         y:
           variables: {fileID: 6025496177165280511}
           input: 0
@@ -220,8 +217,8 @@ MonoBehaviour:
   textures:
     textureMode: 0
     texture:
-      colorTexture: {fileID: 11400000, guid: 9d8e31b3c25c1ef4d8ee353bff52b830, type: 2}
-      shapeTexture: {fileID: 11400000, guid: 2a5cc279313cd99458c8f241584c6648, type: 2}
+      colorTexture: {fileID: 11400000, guid: 6bef15ed80517a54da298379a68ae82c, type: 2}
+      shapeTexture: {fileID: 11400000, guid: be073127eada83946aa1156a588301d8, type: 2}
     textures: []
     widthMode: 0
     width:
@@ -318,14 +315,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sources:
   - resourceType: {fileID: 11400000, guid: 04b436aa485ffa14cab70bc05a1ef5bf, type: 2}
-    flowPercent: 1.5
+    flowPercent: 4
     sourceSearchMode: 0
     surface: {fileID: 0}
     flowType: 1
     flowRate:
       variableName: 
       referenceToVariables: {fileID: 6025496177165280511}
-      localValue: 1.5
+      localValue: 3
     state:
       value: 0
     sources: []
